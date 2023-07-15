@@ -1,0 +1,21 @@
+.transaction-history{
+    width: 600px;
+    border-collapse: collapse;
+}
+
+.table-head{
+    background-color: darkturquoise;
+    color: #ffe;
+    width: 200px;
+}
+
+td,
+th {
+    padding: 4px;
+    color: dimgrey;
+    text-align: center;
+}
+
+tbody>tr:nth-child(2n){
+    background-color: rgba(220, 220, 220, 0.5);
+}

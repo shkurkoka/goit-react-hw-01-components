@@ -1,4 +1,5 @@
 import React from "react";
+import './Stat.css';
 
 const Statistics = ({stats}) => {
   return (
@@ -7,9 +8,9 @@ const Statistics = ({stats}) => {
 
       <ul className="stat-list">
         {stats.map((stat, index) => (
-          <li className="item" key={index}>
-            <span className="label">{stat.label}</span>
-            <span className="percentage">{stat.percentage}%</span>
+          <li className="stat-item" key={index}>
+            <span className="stat-label">{stat.label}</span>
+            <span className="stat-percentage">{stat.percentage}%</span>
           </li>
         ))}
       </ul>
